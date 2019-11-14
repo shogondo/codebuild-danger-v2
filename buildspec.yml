@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - bundle install danger
+  build:
+    commands:
+      - danger
