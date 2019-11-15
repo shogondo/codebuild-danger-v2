@@ -4,7 +4,10 @@ phases:
     runtime-versions:
       ruby: 2.6
     commands:
+      - yum install -y tree
       - gem install danger
   build:
     commands:
+      - branch -a
+      - tree .git
       - danger
