@@ -10,4 +10,7 @@ phases:
     commands:
       - git branch -a
       - tree .git
+      - ls .git/refs/heads
+      - cat .git/refs/heads
+      - cat .git/shallow
       - danger
