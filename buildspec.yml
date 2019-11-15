@@ -8,6 +8,10 @@ phases:
       - gem install danger
   build:
     commands:
-      - branch -a
+      - git branch -a
       - tree .git
+      - ls .git/refs/heads
+      - cat .git/refs/heads/*
+      - cat .git/refs/pull/1/head
+      - cat .git/shallow
       - danger
