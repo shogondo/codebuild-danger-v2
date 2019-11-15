@@ -8,6 +8,6 @@ phases:
       - gem install danger
   build:
     commands:
-      - branch -a
+      - git branch -a
       - tree .git
       - danger
