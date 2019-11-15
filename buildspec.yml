@@ -12,5 +12,6 @@ phases:
       - tree .git
       - ls .git/refs/heads
       - cat .git/refs/heads/*
+      - cat .git/refs/pull/1/head
       - cat .git/shallow
       - danger
